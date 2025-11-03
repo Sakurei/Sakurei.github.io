@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mikael Eureka Anakotta | Portofolio</title>
+  <title>Mikael | Portfolio</title>
   <style>
     :root {
       --bg: #0f1220;
@@ -53,6 +53,25 @@
       color: var(--bg);
       transform: translateY(-2px);
     }
+    .socials {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+    .socials a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .socials a:hover {
+      color: var(--text);
+    }
+    .socials span {
+      color: var(--muted);
+      opacity: 0.5;
+    }
     footer {
       position: absolute;
       bottom: 20px;
@@ -65,17 +84,23 @@
 <body>
 
   <main>
-    <h1>Mikael Eureka Anakotta</h1>
+    <h1>Your Name</h1>
     <p>
       Computer Science student with a strong interest in Back-End Development and Cybersecurity. Skilled in Go, C++, and basic JavaScript.
     </p>
     <a class="button" href="https://github.com/Sakurei" target="_blank" rel="noopener">
       View My Work on GitHub
     </a>
+    
+    <div class="socials">
+      <a href="https://www.instagram.com/mikaelskss" target="_blank" rel="noopener">Instagram</a>
+      <span>&middot;</span>
+      <a href="https://www.tiktok.com/@sekureiix" target="_blank" rel="noopener">TikTok</a>
+    </div>
   </main>
 
   <footer>
-    © <span id="year"></span> Kael
+    © <span id="year"></span> Mika
   </footer>
 
   <script>
